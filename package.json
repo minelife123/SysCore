@@ -1,0 +1,30 @@
+{
+  "name": "syscore-diag",
+  "version": "1.0.0",
+  "description": "Windows System Diagnostics Framework",
+  "main": "bin/cli.js",
+  "bin": {
+    "syscore": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "keywords": [
+    "windows",
+    "diagnostics",
+    "system",
+    "process",
+    "imgui",
+    "cpp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minelife123/SysCore.git"
+  }
+}

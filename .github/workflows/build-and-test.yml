@@ -1,0 +1,30 @@
+name: SysCore CI/CD Build & Test
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: cmd
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Configure CMake
+      run: cmake -B build
+
+    - name: Build Project (Release)
+      run: cmake --build build --config Release
+
+    - name: Run Unit Tests
+      run: build\Release\SysCoreUnitTestApp.exe
+
+    - name: Run Main Application
+      run: build\Release\SystemCoreApp.exe --ci

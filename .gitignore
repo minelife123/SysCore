@@ -1,0 +1,44 @@
+# CMake build directories
+build/
+bin/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio temporary files & caches
+.vs/
+*.vcxproj.user
+*.vcxproj.fileListAbsolute.txt
+*.user
+*.suo
+*.userosset
+*.sln.docstates
+
+# Output binaries & libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# Log files
+*.log
+system_core.log
+syscore_application.log
+
+# Temporary test directories
+syscore_watch_temp/
+syscore_test_watch_dir/
+*.tmp
+
+# Operating System specific
+.DS_Store
+Thumbs.db
+
+# Distribution archives
+dist/
